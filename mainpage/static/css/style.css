@@ -1,0 +1,273 @@
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+
+
+.drop_down{
+  padding-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid;
+  background-color: white;
+
+  position: sticky;
+  top: 0;
+}
+
+.drop_btn {
+  height: 20px;
+  width: 20px;
+  margin-left: 10px;
+  background: url("menu.png");
+  background-size: contain;
+  border: none;
+}
+
+.drop_list{
+
+}
+
+
+
+.drop_list a{
+  text-decoration: none;
+  color: black;
+  margin-right: 10px;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+
+.mainpage {
+  height: 100vh;
+  width: 100%;
+  background: rgb(239, 242, 246);
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  height: 100vh;
+  width: 85%;
+  background: white;
+}
+
+.textplace {
+  margin-top: 25px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.label1{
+  width: 75%;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.formplace {
+  margin-top: 25px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.formdata {
+  max-width: 500px;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.formdata input{
+  border-radius: 5px;
+  border: 1px solid;
+  border-color: rgb(229, 234, 239);
+
+}
+
+.grafic_place {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.timecolumn{
+  display: flex;
+  flex-direction: column;
+}
+.time {
+  height: 26px;
+  width: 44px;
+  border: 1px solid;
+  border-color: rgb(229, 234, 239);
+}
+
+
+.daycolumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.day p{
+  text-orientation: verical;
+  text-align: center;
+}
+
+.day{
+  border: 1px solid;
+  border-color: rgb(229, 234, 239);
+  height: 26px;
+  width: 26px;
+}
+.energy_status {
+  height: 26px;
+  width: 26px;
+  border: 1px solid;
+  border-color: rgb(229, 234, 239);
+}
+
+.energy_status_off{
+  height: 26px;
+  width: 26px;
+  border: 1px solid;
+  border-color: rgb(229, 234, 239);
+ /* background: url("{% static 'img/lightofday1.png'%}");
+  background-size: contain;*/
+}
+
+
+
+.energy_status_offday{
+  height: 26px;
+  width: 26px;
+  border: 1px solid;
+  border-color: rgb(229, 234, 239);
+  background-size: contain;
+}
+
+.day_offday {
+  height: 26px;
+  width: 26px;
+  border: 1px solid;
+  border-color: rgb(229, 234, 239);
+  background-color: rgb(255, 209, 45);
+}
+
+.day_offday p{
+  text-orientation: verical;
+  text-align: center;
+}
+
+
+
+.fooder {
+  display: flex;
+  justify-content: center;
+  height: 50px;
+}
+
+
+
+.butget {
+  margin-top: 20px;
+  background-color: lightgreen;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
